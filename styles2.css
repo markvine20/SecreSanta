@@ -1,0 +1,146 @@
+/* Page Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('BC.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    color: white;
+    text-align: center;
+}
+
+/* Snowfall Effect */
+.snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    z-index:9999;
+    overflow: hidden;
+}
+
+/* Snowflake Styling */
+.snowflakes span {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    opacity: 0.8;
+    animation: snow 10s linear infinite;
+    animation-duration: calc(5s + (random() * 5s));
+    animation-delay: calc(random() * 2s);
+    animation-timing-function: ease-in-out;
+}
+
+/* Snowfall Keyframes */
+@keyframes snow {
+    0% {
+        top: -10%;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+}
+
+header .message {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* Wishlist Section */
+.wishlist {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+.gift {
+    background: #d44c4c; /* Red background */
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 2px 2px 5px #000;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Ensure text is white */
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.gift:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 4px 4px 10px #000;
+}
+
+.gift img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gift h3 {
+    margin: 10px 0;
+    color: white; /* Ensure consistent text color */
+}
+
+.gift p {
+    margin: 5px 0;
+    color: blue; /* Ensure consistent text color */
+}
+
+/* Footer Button Group */
+footer .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+footer .button-group button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background: #d44c4c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+footer .button-group button:hover {
+    background: #a83737;
+}
+
+/* Starry Sky for consistency */
+.starry-sky {
+    background: inherit; /* Ensures it inherits the body background */
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    .gift {
+        width: 150px;
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header .message {
+        font-size: 1em;
+    }
+}
