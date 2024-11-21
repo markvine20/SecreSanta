@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa Page</title>
+    <link rel="stylesheet" href="styles2.css">
+<style>
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+</style>
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+</div>
+
+</head>
+<body>
+    <div class="starry-sky">
+        <div class="sleigh"></div>
+        <div class="content-container">
+            <h1>🎅 Hello, Secret Santa! 🎄</h1>
+            <p class="message">Here's all you need to make this Christmas special! 🎁</p>
+        </div>
+        <section class="wishlist">
+            <a href="https://example.com/xiaomi-night-light" target="_blank" class="gift">
+                <img src="gift1.jpg" alt="Gift 1">
+                <h3>Xiaomi Mijia Night Light 3 Rechargeable Motion Sensor</h3>
+                <p>In a room where shadows dance and play, The Xiaomi Mijia Night Light 3 keeps darkness at bay. With a gentle glow, it senses your motion, Guiding your steps with soft devotion.</p>
+            </a>
+            <a href="https://example.com/metaheld-fan" target="_blank" class="gift">
+                <img src="gift2.jpg" alt="Gift 2">
+                <h3>Amgras MetaHeld Fan Pro Portable Turbo Fan</h3>
+                <p>But beware the Amgras MetaHeld Fan Pro, A portable turbo with a powerful blow. It whirs and spins with a mighty roar, Cooling the room, but demanding more.</p>
+            </a>
+            <a href="https://example.com/force-impulse-gundam" target="_blank" class="gift">
+                <img src="gift3.jpg" alt="Gift 3">
+                <h3>Bandai RG 1/144 Force Impulse Gundam Spec II</h3>
+                <p>And in the corner, a warrior stands tall, The Bandai RG Force Impulse Gundam, ready for all. With plastic precision and a fierce stance, It guards the night, prepared to advance. </p>
+            </a>
+        </section>
+        <footer></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
